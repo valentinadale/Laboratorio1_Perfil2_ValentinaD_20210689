@@ -48,7 +48,7 @@ public class Agenda {
                     break;
 
                 case 3:
-                    System.out.println("Ingrese el nombre del contacto que desea eliminar:");
+                    System.out.println("Ingrese el nombre del contacto que desea buscar:");
                     String nombre2 = sc.nextLine();
                     agenda.Buscar(nombre2);
                     break;
@@ -88,7 +88,13 @@ public class Agenda {
 
     public void Buscar(String nombre){
 
-        //for (Contacto value : lista.values())
+        for (Contacto value : lista.values()){
+            if(value.getNombre().equals(nombre)){
+                System.out.println("El nombre '"+nombre+"' si se encontro en la agenda");
+            }else{
+                System.out.println("El nombre "+nombre+" no se encontro en la agenda");
+            }
+        }
 
     }
 
