@@ -88,7 +88,7 @@ public class Agenda {
 
     public void Buscar(String nombre){
 
-        lista.containsValue(nombre);
+        //for (Contacto value : lista.values())
 
     }
 
